@@ -49,20 +49,20 @@ const answers = await inquirer.prompt([
 {
 type: 'input',
 message: 'What is the office number?',
-name: 'office number',
+name: 'office_number',
 when: (answers)=> answers.role === managerRole,
 
 },
 {
     type: 'input',
 message: 'What is the github username?',
-name: 'office number',
+name: 'github',
 when: (answers)=> answers.role === engineerRole,
 },
 {
     type: 'input',
 message: 'What is the school?',
-name: 'office number',
+name: 'school',
 when: (answers)=> answers.role ===internRole,
 },
 {
@@ -75,6 +75,7 @@ name: 'add_another',
 
 
 ]);
+
 // once we got an employee, store it
 // check for the role
 // create the employee object based on the role
@@ -126,5 +127,3 @@ main();
 
 // interim
 // school
-
-
