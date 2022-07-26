@@ -48,4 +48,4 @@ return mainTemplate.replace('{{body}}', cards);
 
 }
 
-module.exports = generateHTML;
+module.exports = generateHtml;
